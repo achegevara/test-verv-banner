@@ -1,0 +1,18 @@
+.container {
+    position: relative;
+    width: 100vw;
+    height: 896px;
+    background: var(--main-bg);
+}
+
+@media all and (max-width:381px) {
+    .container {
+        height: 812px;
+    }
+}
+
+@media all and (max-width:320px) {
+    .container {
+        height: 568px;
+    }
+}

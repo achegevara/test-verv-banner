@@ -1,0 +1,68 @@
+@import "./reset.css";
+@import "./container.scss";
+@import "./topBlock.scss";
+@import "./mainBlock.scss";
+@import "./review.scss";
+@import "./homeLine.scss";
+
+body {
+    font-family: “SF Pro Text”, -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+:root {
+    // Задаём цвета
+    --black-1: #000000;
+    --black-2: #1A1A1A;
+    --white: #FFFFFF;
+    --grey-1: #F3F2F9;
+    --grey-2: #373640;
+    --grey-3: #7D7D80;
+    --dark: linear-gradient(225deg, #262526 0%, #19181A 100%);
+
+    // Дополнительным переменные для семантического удобства и упрощения поддержки
+    --light-bg: var(--white);
+    --dark-bg: var(--black-1);
+
+    --review-bg-light: var(--grey-1);
+    --review-bg-dark: var(--dark);
+
+    --text-light: var(--black-2);
+    --text-dark: var(--white);
+
+    --sub-bg-light: var(--grey-1);
+    --sub-bg-dark: var(--grey-2);
+
+    --infoline-light: var(--black-1);
+    --infoline-dark: var(--grey-3);
+
+    // Задаём цвета светлой темы
+    --main-bg: var(--light-bg);
+    --review-bg: var(--review-bg-light);
+    --text: var(--text-light);
+    --sub-bg: var(--sub-bg-light);
+    --infoline: var(--infoline-light);
+}
+
+html[data-theme-dark] {
+    // Задаём цвета тёмной темы
+    --main-bg: var(--dark-bg);
+    --review-bg: var(--review-bg-dark);
+    --text: var(--text-dark);
+    --sub-bg: var(--sub-bg-dark);
+    --infoline: var(--infoline-dark);
+}
+
+// .path {
+//     stroke-dasharray: 1000;
+//     stroke-dashoffset: 0;
+//     animation: draw 5s linear forwards;
+//   }
+  
+//   @keyframes draw {
+//     from {
+//       stroke-dashoffset: 1000;
+//     }
+//     to {
+//       stroke-dashoffset: 0;
+//     }
+//   }

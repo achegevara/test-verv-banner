@@ -1,0 +1,12 @@
+.homeLine {
+    position: absolute;
+    bottom: 8px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+@media all and (max-width: 320px) {
+    .homeLine {
+        display: none;
+    }
+}
