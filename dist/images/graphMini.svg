@@ -3,15 +3,15 @@
 <path class="path" opacity="0.951181" d="M0 3.20214C0 3.20214 56.2997 2.00908 92.052 7.85769C127.804 13.7063 141.35 20.7155 183.52 26.5641C231.239 31.7629 286.694 45 325 45" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path class="path" d="M0 4.04272C0 4.04272 83.3999 3.40196 107.203 12.3725C131.007 21.343 132.162 32.5455 165.437 41.0303C198.712 49.5152 211.224 73.0984 241.829 85.2727C261.784 93.2108 267.552 89.73 288.18 96.9474C299.188 100.799 312.138 104 329 104" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 
-<g class="labels">
-<g filter="url(#filter0_d)">
+<g class="circleGreen" filter="url(#filter0_d)">
 <rect x="267" y="85" width="14" height="14" rx="7" fill="#04CD00"/>
 <rect x="268.5" y="86.5" width="11" height="11" rx="5.5" stroke="white" stroke-width="3"/>
 </g>
-<g filter="url(#filter1_d)">
+<g class="circleRed" filter="url(#filter1_d)">
 <rect x="267" y="32" width="14" height="14" rx="7" fill="#EE304E"/>
 <rect x="268.5" y="33.5" width="11" height="11" rx="5.5" stroke="white" stroke-width="3"/>
 </g>
+<g class="labels">
 <g class="pulseElem" clip-path="url(#clip0)">
 <g filter="url(#filter2_d)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M249 63C249 57.4772 253.477 53 259 53H290C295.523 53 300 57.4772 300 63V67C300 72.5228 295.523 77 290 77H279L274 80L269 77H259C253.477 77 249 72.5228 249 67V63Z" fill="white"/>
@@ -28,7 +28,7 @@
 </g>
 </g>
 <defs>
-   <style>
+    <style>
         .path {
             stroke-dasharray: 1000;
             stroke-dashoffset: 0;
@@ -46,8 +46,8 @@
 
 
         .labels {
-            animation: appear 500ms linear both;
-            animation-delay: 1500ms;
+            animation: appear 1s linear both;
+            animation-delay: 2s;
         }
 
         @keyframes appear {
@@ -65,42 +65,82 @@
             }
         }
 
+        .circleRed {
+            animation: appearCircleRed 1s linear both;
+            animation-delay: 2s;
+        }
+
+                @keyframes appearCircleRed {
+            0% {
+                transform: scale(0);
+                transform-origin: 85% 45%;
+            }
+            50% {
+                transform: scale(1.2);
+                transform-origin: 85% 45%;
+            }
+            100% {
+                transform: scale(1);
+                transform-origin: 85% 45%;
+            }
+        }
+
+        .circleGreen {
+            animation: appearCircleGreen 1s linear both;
+            animation-delay: 2s;
+        }
+
+                @keyframes appearCircleGreen {
+            0% {
+                transform: scale(0);
+                transform-origin: 85% 85%;
+            }
+            50% {
+                transform: scale(1.2);
+                transform-origin: 85% 85%;
+            }
+            100% {
+                transform: scale(1);
+                transform-origin: 85% 85%;
+            }
+        }
+
         .pulseElem {
             animation: pulse 2000ms infinite both;
-            animation-delay: 2s;
+            animation-delay: 3s;
         }
         
         @keyframes pulse {
             0% {
                 transform: scale(1);
-                transform-origin: 85% 85%;
+                transform-origin: 85% 75%;
             }
             20% {
                 transform: scale(1.1);
-                transform-origin: 85% 80%;
+                transform-origin: 85% 75%;
             }
             30% {
                 transform: scale(1);
-                transform-origin: 85% 80%;
+                transform-origin: 85% 75%;
             }
             50% {
                 transform: scale(1.1);
-                transform-origin: 85% 80%;
+                transform-origin: 85% 75%;
             }
             60% {
                 transform: scale(1);
-                transform-origin: 85% 80%;
+                transform-origin: 85% 75%;
             }
             90% {
                 transform: scale(1);
-                transform-origin: 85% 80%;
+                transform-origin: 85% 75%;
             }
             100% {
                 transform: scale(0.9);
-                transform-origin: 85% 80%;
+                transform-origin: 85% 75%;
             }
         }
-    </style>
+        </style>
 <filter id="filter0_d" x="261" y="81" width="26" height="26" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
 <feFlood flood-opacity="0" result="BackgroundImageFix"/>
 <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>

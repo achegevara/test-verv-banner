@@ -3,15 +3,15 @@
 <path class="path" opacity="0.951181" d="M-13 1.00649C-13 1.00649 54.7328 -0.948561 97.7457 8.63546C140.758 18.2195 157.055 29.7054 207.789 39.2894C265.199 47.8085 331.915 69.5 378 69.5" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 <path class="path" d="M-13 1.97048C-13 1.97048 87.384 0.913243 116.035 15.7146C144.686 30.516 146.077 49 186.128 63C226.179 77 241.24 115.912 278.077 136C302.096 149.098 309.038 143.355 333.867 155.263C347.117 161.618 362.705 166.9 383 166.9" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
 
-<g class="labels">
-<g filter="url(#filter0_d)">
+<g class="circleGreen" filter="url(#filter0_d)">
 <rect x="313" y="143" width="14" height="14" rx="7" fill="#04CD00"/>
 <rect x="314.5" y="144.5" width="11" height="11" rx="5.5" stroke="white" stroke-width="3"/>
 </g>
-<g filter="url(#filter1_d)">
+<g class="circleRed" filter="url(#filter1_d)">
 <rect x="313" y="55" width="14" height="14" rx="7" fill="#EE304E"/>
 <rect x="314.5" y="56.5" width="11" height="11" rx="5.5" stroke="white" stroke-width="3"/>
 </g>
+<g class="labels">
 <g class="pulseElem" clip-path="url(#clip0)">
 <g filter="url(#filter2_d)">
 <path fill-rule="evenodd" clip-rule="evenodd" d="M295 121C295 115.477 299.477 111 305 111H336C341.523 111 346 115.477 346 121V125C346 130.523 341.523 135 336 135H325L320 138L315 135H305C299.477 135 295 130.523 295 125V121Z" fill="white"/>
@@ -65,6 +65,46 @@
             }
         }
 
+        .circleRed {
+            animation: appearCircleRed 1s linear both;
+            animation-delay: 2s;
+        }
+
+                @keyframes appearCircleRed {
+            0% {
+                transform: scale(0);
+                transform-origin: 85% 45%;
+            }
+            50% {
+                transform: scale(1.2);
+                transform-origin: 85% 45%;
+            }
+            100% {
+                transform: scale(1);
+                transform-origin: 85% 45%;
+            }
+        }
+
+        .circleGreen {
+            animation: appearCircleGreen 1s linear both;
+            animation-delay: 2s;
+        }
+
+                @keyframes appearCircleGreen {
+            0% {
+                transform: scale(0);
+                transform-origin: 85% 85%;
+            }
+            50% {
+                transform: scale(1.2);
+                transform-origin: 85% 85%;
+            }
+            100% {
+                transform: scale(1);
+                transform-origin: 85% 85%;
+            }
+        }
+
         .pulseElem {
             animation: pulse 2000ms infinite both;
             animation-delay: 3s;
@@ -73,31 +113,31 @@
         @keyframes pulse {
             0% {
                 transform: scale(1);
-                transform-origin: 85% 85%;
+                transform-origin: 85% 75%;
             }
             20% {
                 transform: scale(1.1);
-                transform-origin: 85% 80%;
+                transform-origin: 85% 75%;
             }
             30% {
                 transform: scale(1);
-                transform-origin: 85% 80%;
+                transform-origin: 85% 75%;
             }
             50% {
                 transform: scale(1.1);
-                transform-origin: 85% 80%;
+                transform-origin: 85% 75%;
             }
             60% {
                 transform: scale(1);
-                transform-origin: 85% 80%;
+                transform-origin: 85% 75%;
             }
             90% {
                 transform: scale(1);
-                transform-origin: 85% 80%;
+                transform-origin: 85% 75%;
             }
             100% {
                 transform: scale(0.9);
-                transform-origin: 85% 80%;
+                transform-origin: 85% 75%;
             }
         }
         </style>
