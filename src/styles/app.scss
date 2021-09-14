@@ -3,10 +3,9 @@
 @import "./topBlock.scss";
 @import "./mainBlock.scss";
 @import "./review.scss";
-@import "./homeLine.scss";
 
 body {
-    font-family: “SF Pro Text”, -apple-system, BlinkMacSystemFont, sans-serif;
+    font-family: "SF Pro Text", -apple-system, BlinkMacSystemFont, sans-serif;
 }
 
 :root {
@@ -51,18 +50,3 @@ html[data-theme-dark] {
     --sub-bg: var(--sub-bg-dark);
     --infoline: var(--infoline-dark);
 }
-
-// .path {
-//     stroke-dasharray: 1000;
-//     stroke-dashoffset: 0;
-//     animation: draw 5s linear forwards;
-//   }
-  
-//   @keyframes draw {
-//     from {
-//       stroke-dashoffset: 1000;
-//     }
-//     to {
-//       stroke-dashoffset: 0;
-//     }
-//   }
