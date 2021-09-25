@@ -9,7 +9,7 @@ You can find the demo here: https://achegevara.github.io/verv-banner-demo/
 Some features, that can not be visible directly from the UI:
 1) graphs animations are played on each page reload;
 2) the slider auto-swipes every 5 seconds until the user makes a swipe manually;
-3) subscription blocks are clickable, choosing any of them and clicking the "Continue" button will open an appropriate links(just test ones);
+3) subscription blocks are clickable, choosing any of them and clicking the "Continue" button will open the appropriate links(just test ones);
 4) the dark mode can be turned ON/OFF by clicking on the "cross" icon at the top-right conner of the banner(this is made just for easy testing)).
 
 
